@@ -1,0 +1,9 @@
+# Visual Studio folder
+.vs
+
+# Build folders
+[Bb]in
+[Oo]bj
+
+# Ignore folder contains logs of tests
+TestResults
