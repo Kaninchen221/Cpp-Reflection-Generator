@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cpp-Reflection-Generator", "Cpp-Reflection-Generator\Cpp-Reflection-Generator.csproj", "{FD125F68-06FD-4414-B536-D524A0A2DE00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cpp-Reflection-Generator-Tests", "Cpp-Reflection-Generator-Tests\Cpp-Reflection-Generator-Tests.csproj", "{F3BF3A96-92A4-48E9-9EA4-6C7AC6811BAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD125F68-06FD-4414-B536-D524A0A2DE00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD125F68-06FD-4414-B536-D524A0A2DE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD125F68-06FD-4414-B536-D524A0A2DE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD125F68-06FD-4414-B536-D524A0A2DE00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3BF3A96-92A4-48E9-9EA4-6C7AC6811BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BF3A96-92A4-48E9-9EA4-6C7AC6811BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BF3A96-92A4-48E9-9EA4-6C7AC6811BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BF3A96-92A4-48E9-9EA4-6C7AC6811BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55DDD9C7-624C-4F1B-B199-0BCF298BAE57}
+	EndGlobalSection
+EndGlobal
