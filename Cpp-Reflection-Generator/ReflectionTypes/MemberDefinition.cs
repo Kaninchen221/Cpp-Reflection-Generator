@@ -34,7 +34,7 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
             {
                 var Builder = new StringBuilder();
 
-                Builder.Append($"\n\t\tValue : {Value}\n");
+                Builder.Append($"\n\t\tValue : {Value}");
                 if (ReferenceToType != null)
                 {
                     Builder.Append(ReferenceToType.ToString());
@@ -49,6 +49,9 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
 
         [XmlAttribute(AttributeName = "prot")]
         public string AccessSpecifier { get; set; }
+
+        [XmlElement(ElementName = "templateparamlist")]
+        public Template Template { get; set; }
 
         [XmlAttribute(AttributeName = "static")]
         public string Static { get; set; }
@@ -91,7 +94,7 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
 
             foreach (var Property in Type.GetProperties())
             {
-                Builder.Append($"\n\t{Property.Name} : {Property.GetValue(this)}");
+                Builder.Append($"\t{Property.Name} : {Property.GetValue(this)}\n");
             }
 
             return Builder.ToString();

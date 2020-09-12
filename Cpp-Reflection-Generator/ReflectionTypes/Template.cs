@@ -22,7 +22,7 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
 
             foreach (var Param in Params)
             {
-                Builder.Append(Param.Type + '\n');
+                Builder.Append(Param.Type);
             }
 
             return Builder.ToString();

@@ -23,16 +23,21 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
         {
             var Builder = new StringBuilder();
 
+            Builder.Append("\t~~~~ Class ~~~~\n");
+
             Builder.Append($"\tName : {Name}\n");
 
             if(Template != null)
-                Builder.Append("\tTemplate : " + OptionalTemplate.ToString() + '\n');
+                Builder.Append("\tTemplate : " + Template.ToString() + '\n');
+
+            Builder.Append('\n');
 
             foreach(var SectionDef in SectionDefinititons)
             {
-                Builder.Append(SectionDef.ToString() + '\n');
+                Builder.Append(SectionDef.ToString());
             }
             Builder.Append(Location.ToString());
+            Builder.Append('\n');
 
             return Builder.ToString();
         }

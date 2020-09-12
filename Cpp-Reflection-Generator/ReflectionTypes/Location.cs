@@ -12,7 +12,7 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
 
         public override string ToString()
         {
-            return "Relative path : " + RelativePath;
+            return "\tRelative path : " + RelativePath;
         }
     };
 }
