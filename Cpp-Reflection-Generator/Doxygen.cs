@@ -15,6 +15,7 @@ namespace Cpp_Reflection_Generator
 
         public Doxygen()
         {
+            PathToTemporaryDoxyfile = "Doxyfile";
             IncludePathDoxyfileProperty = "INPUT = ";
             DoxygenName = "doxygen";
             XmlOutputDirectory = "xml";
