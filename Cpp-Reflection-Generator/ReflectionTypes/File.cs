@@ -10,11 +10,11 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
     {
 
         [XmlElement(ElementName = "compounddef", IsNullable = true)]
-        public Class StoredClass { get; set; }
+        public Class Class { get; set; }
 
         public override string ToString()
         {
-            return StoredClass.ToString();
+            return Class.ToString();
         }
 
     };

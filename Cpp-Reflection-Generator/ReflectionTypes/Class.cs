@@ -11,7 +11,7 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
         public string Name { get; set; }
 
         [XmlElement(ElementName = "templateparamlist")]
-        public Template OptionalTemplate { get; set; }
+        public Template Template { get; set; }
 
         [XmlElement(ElementName = "sectiondef")]
         public List<SectionDefinititon> SectionDefinititons { get; set; }
@@ -24,8 +24,10 @@ namespace Cpp_Reflection_Generator.ReflectionTypes
             var Builder = new StringBuilder();
 
             Builder.Append($"\tName : {Name}\n");
-            if(OptionalTemplate != null)
+
+            if(Template != null)
                 Builder.Append("\tTemplate : " + OptionalTemplate.ToString() + '\n');
+
             foreach(var SectionDef in SectionDefinititons)
             {
                 Builder.Append(SectionDef.ToString() + '\n');
