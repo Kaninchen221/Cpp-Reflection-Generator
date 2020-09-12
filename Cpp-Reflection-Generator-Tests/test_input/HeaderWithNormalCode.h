@@ -1,4 +1,4 @@
-namespace ZT {
+namespace zt {
 	
 	class NormalClass {
 		
